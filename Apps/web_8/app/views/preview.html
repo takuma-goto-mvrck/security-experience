@@ -1,0 +1,26 @@
+{{template "header.html" .}}
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <h1>セキュリティ対策 WEB</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="row panel-body">
+            <form method="post" action="http://localhost:8000/logout">
+                <span class="h2">アカウント編集画面</span>
+                <button type="submit" class="btn btn-lg btn-primary pull-right">
+                    ログアウト
+                </button>
+            </form>
+        </div>
+    </div> 
+    <br>
+    <h4>サンプルページのため何もありません。</h4>
+</div>
+
+{{template "footer.html" .}}

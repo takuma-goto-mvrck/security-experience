@@ -1,0 +1,27 @@
+{{template "header.html" .}}
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <h1>ようこそ！{{.User.Name}}さん</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container panel panel-default">
+    <div class="row panel-body">
+        <form method="post" action="http://localhost:8000/logout">
+            <span class="h2">アカウント名：{{.User.Account}}</span>
+            <button type="submit" class="btn btn-lg btn-primary pull-right">
+                ログアウト
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<div class="container">
+    <a class="btn btn-lg btn-default" href="http://localhost:8000/search" style="width: 100%; margin-top: 50px;">商品検索画面へ</a>
+</div>
+
+{{template "footer.html" .}}

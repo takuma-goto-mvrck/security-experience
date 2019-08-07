@@ -1,0 +1,64 @@
+{{template "header.html" .}}
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <h1>商品検索</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container panel panel-default">
+    <div class="row panel-body">
+        <form method="post" action="http://localhost:8000/logout">
+            <span class="h3">アカウント名：{{.User.Account}}</span>
+            <button type="submit" class="btn btn-primary pull-right">
+                ログアウト
+            </button>
+            <a href="http://localhost:8000/home" class="btn btn-default pull-right" style="margin-right: 10px;">
+                ホームに戻る
+            </a>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <form method="get" action="http://localhost:8000/search">
+        <h3 class="text-danger">商品名を検索（部分一致）</h3>
+        <div class="form-inline">
+            <input type="text" name="query" class="form-control" style="width: 80%;" value="{{.Query}}"
+                   placeholder="入力例：商品-0"/>
+            <button type="submit" class="btn btn-primary" style="width: 100px;">
+                検索<span class="glyphicon glyphicon-search" style="margin-left: 5px;"></span>
+            </button>
+            <a href="http://localhost:8000/search" class="btn btn-warning" style="width: 100px;">
+                リセット<span class="glyphicon glyphicon-erase" style="margin-left: 5px;"></span>
+            </a>
+        </div>
+    </form>
+{{if .Products}}
+    <p style="border-bottom: 1px solid grey; margin-top: 30px;"></p>
+{{else}}
+    <div class="alert alert-danger" style="margin-top: 30px;">
+        {{.Message}}
+    </div>
+{{end}}
+{{range .Products}}
+    <div class="media">
+        <div class="media-body">
+            <h3>商品名：{{.Name}}</h3>
+            <p>商品番号：{{.Number}}</p>
+            <p>価格：¥{{.Price }}</p>
+            <p>数量：残り<span class="text-danger" style="font-weight: bold;">{{.Stock}}</span>個</p>
+        </div>
+        <a class="media-right" href="#">
+        {{if .Image}}
+            <img src="/public/img/{{.Image}}" width="280px" height="150px">
+        {{end}}
+        </a>
+    </div>
+    <p style="border-bottom: 1px solid grey; margin-top: 15px;"></p>
+{{end}}
+</div>
+
+{{template "footer.html" .}}

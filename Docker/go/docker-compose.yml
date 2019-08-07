@@ -1,0 +1,39 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      args:
+        service: $SERVICE_NAME
+    ports:
+      - 8000:8080
+    volumes:
+      - ../../Apps/$SERVICE_NAME:/go/src/github.com/takuma-goto310/security-experience/Apps/$SERVICE_NAME
+    command: ./app/wait-for-it.sh db:3306 -- bash -c "go build -o ./exec github.com/takuma-goto310/security-experience/Apps/$SERVICE_NAME/app && ./exec"
+    container_name: security_web_go
+    depends_on:
+      - db
+  web_trap:
+    build:
+      context: .
+      args:
+        service: web_trap
+    ports:
+      - 8010:8080
+    volumes:
+      - ../../Apps/web_trap:/go/src/github.com/takuma-goto310/security-experience/Apps/web_trap
+    command: ./app/wait-for-it.sh db:3306 -- bash -c "go build -o ./exec github.com/takuma-goto310/security-experience/Apps/web_trap/app && ./exec"
+    container_name: security_web_trap_go
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    ports:
+      - 3309:3306
+    volumes:
+      - ../../Config/db/my.cnf:/etc/mysql/conf.d/my.cnf
+    environment:
+      MYSQL_ROOT_PASSWORD: security
+      MYSQL_DATABASE: security
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_general_ci
+    container_name: security_db_go

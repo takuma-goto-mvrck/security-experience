@@ -1,0 +1,53 @@
+{{template "header.html" .}}
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <h1>セキュリティ対策 WEB</h1>
+        </div>
+    </div>
+</header>
+
+{{$UserID := .UserID}}
+{{$Query := .Query}}
+
+<div class="container">
+    <div class="row">
+        <p class="h3 text-warning" style="margin-bottom: 2em;">[ユーザ1]さんのスペース</p>
+        <div style="margin-top: 4em;">
+            <p>＞＞
+                <a href="http://localhost:8000/home/{{$UserID}}">Home</a>&nbsp;
+                {{if $Query}}
+                {{range .Histories}}
+                {{if .Cwd}}
+                /&nbsp;&nbsp;<a href="http://localhost:8000/home/{{$UserID}}?query={{.Path}}">{{.Cwd}}</a>&nbsp;
+                {{end}}
+                {{end}}
+                {{end}}
+            </p>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="col-lg-10">ディレクトリ/ファイル名</th>
+                        <th>閲覧</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{range .Files}}
+                    <tr>
+                        {{if .IsDir}}
+                        <td><a href="http://localhost:8000/home/{{$UserID}}?query={{$Query}}{{.Name}}">{{.Name}}</a></td>
+                        <td>--</td>
+                        {{else}}
+                        <td>{{.Name}}</td>
+                        <td><a href="http://localhost:8000/browse/{{$UserID}}?query={{$Query}}{{.Name}}" class="btn btn-success col-xs-offset-2" target="_blank"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a></td>
+                        {{end}}
+                    </tr>
+                    {{end}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{{template "footer.html" .}}

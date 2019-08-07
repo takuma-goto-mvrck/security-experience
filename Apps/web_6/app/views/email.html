@@ -1,0 +1,19 @@
+{{template "header.html" .}}
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <h1>メールアドレス変更</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <label>変更後のメールアドレスを入力してください</label>
+    <form method="post" action="http://localhost:8000/change_email">
+        <input type="text" name="email" class="form-control" placeholder="sample@test.com" />
+        <button type="submit" class="btn btn-primary" style="width: 160px; margin-top: 20px;">メールアドレス変更</button>
+    </form>
+</div>
+
+{{template "footer.html" .}}

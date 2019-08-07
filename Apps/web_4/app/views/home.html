@@ -1,0 +1,52 @@
+{{template "header.html" .}}
+
+<div class="container panel panel-default" style="margin-top: 20px;">
+    <div class="row panel-body">
+        <form method="post" action="http://localhost:8000/logout">
+            <span class="h2">アカウント名：{{.User.Account}}</span>
+            <button type="submit" class="btn btn-lg btn-primary pull-right">
+                ログアウト
+            </button>
+        </form>
+    </div>
+</div>
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <h1>掲示板</h1>
+            ここは掲示板です。自由にコメントしてください。
+        </div>
+    </div>
+</header>
+
+<div id="comment-area">
+    <div id="comment-form" class="container">
+        <form method="post" action="http://localhost:8000/comment">
+            <input type="text" name="comment" class="form-control" placeholder="コメントを入力してください" />
+            <button type="submit" class="btn btn-primary" style="width: 160px; margin-top: 20px;">コメント送信</button>
+        </form>
+        <p style="border-bottom: 1px solid grey; margin-top: 15px;"></p>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <h3>コメント一覧</h3>
+        </div>
+    </div>
+    
+    <div id="comment" class="container">
+    {{if .Comments}}
+        {{range .Comments}}
+        <div>
+            {{.Line}}
+        </div>
+        <p style="border-bottom: 1px solid grey; margin-top: 15px;"></p>
+        {{end}}
+    {{else}}
+        <p>コメントはありません</p>
+    {{end}}
+    </div>
+</div>
+
+{{template "footer.html" .}}

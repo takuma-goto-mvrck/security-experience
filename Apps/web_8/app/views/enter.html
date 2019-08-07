@@ -1,0 +1,45 @@
+{{template "header.html" .}}
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <h1>セキュリティ対策 WEB</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container" style="width: 30%;">
+    <h2>Filot Shoppingへようこそ</h2>
+    <div class="alert alert-danger" style="height: 50px;margin-top: 30px;">
+        <h4>サービスを利用するにはログインが必要です</h4>
+    </div>
+</div>
+
+<div class="center-block" style="width: 30%;">
+    <form class="form-horizontal" method="post" action="http://localhost:8000/login">
+        <div class="panel panel-primary">
+            <div class="panel-heading text-center">
+                <h3>ログイン情報を入力してください</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="col-lg-4 control-label" for="account">アカウント名</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control" id="account" name="account" placeholder="アカウント名" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-4 control-label" for="password">パスワード</label>
+                    <div class="col-lg-8">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="パスワード" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" name="url" value="{{.URL}}">
+        <a href="http://localhost:8000/index" class="btn btn-warning">戻る</a>
+        <button type="submit" class="btn btn-primary pull-right">ログイン</button>
+    </form>
+</div>
+
+{{template "footer.html" .}}
