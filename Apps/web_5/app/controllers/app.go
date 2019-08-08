@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/takuma-goto310/security-experience/Apps/web_5/app/db"
-	"github.com/takuma-goto310/security-experience/Apps/web_5/app/models"
+	"github.com/takuma-goto-mvrck/security-experience/Apps/web_5/app/db"
+	"github.com/takuma-goto-mvrck/security-experience/Apps/web_5/app/models"
 )
 
 // Cookieに格納するセッション情報のキー

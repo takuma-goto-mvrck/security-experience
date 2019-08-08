@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/takuma-goto310/security-experience/Apps/web_trap/app/controllers"
+	"github.com/takuma-goto-mvrck/security-experience/Apps/web_trap/app/controllers"
 )
 
 func main() {

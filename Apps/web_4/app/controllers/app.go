@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/takuma-goto310/security-experience/Apps/web_4/app/db"
-	"github.com/takuma-goto310/security-experience/Apps/web_4/app/models"
+	"github.com/takuma-goto-mvrck/security-experience/Apps/web_4/app/db"
+	"github.com/takuma-goto-mvrck/security-experience/Apps/web_4/app/models"
 )
 
 // TemplateComment is struct for comment to render Home page

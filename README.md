@@ -34,15 +34,15 @@
 # アプリ内容
 |app_no|テーマ|README|
 |---|---|---|
-|web_4|XSS、エラーメッセージからの情報漏洩)|https://github.com/takuma-goto310/security-experience/blob/master/Apps/web_4/README.md|
-|web_5|SQL呼び出し(SQLインジェクション)|https://github.com/takuma-goto310/security-experience/blob/master/Apps/web_5/README.md|
-|web_6|取り消しの効かない重要な処理(CSRF)|https://github.com/takuma-goto310/security-experience/blob/master/Apps/web_6/README.md|
-|web_7|セッション管理の不備(セッションハイジャック、推測可能なセッションID、セッションIDの固定化)|https://github.com/takuma-goto310/security-experience/blob/master/Apps/web_7/README.md|
-|web_8|リダイレクト処理(オープンリダイレクタ、HTTPヘッダインジェクション)|https://github.com/takuma-goto310/security-experience/blob/master/Apps/web_8/README.md|
-|web_10|メール送信(メールヘッダ・インジェクション)|https://github.com/takuma-goto310/security-experience/blob/master/Apps/web_10/README.md|
-|web_11|ファイルアクセス(ディレクトリ・トラバーサル、意図しないファイル公開)|https://github.com/takuma-goto310/security-experience/blob/master/Apps/web_11/README.md|
-|web_12|OSコマンド(OSコマンド・インジェクション)|https://github.com/takuma-goto310/security-experience/blob/master/Apps/web_12/README.md|
-|web_15|eval(evalインジェクション)|https://github.com/takuma-goto310/security-experience/blob/master/Apps/web_15/README.md|
+|web_4|XSS、エラーメッセージからの情報漏洩)|https://github.com/takuma-goto-mvrck/security-experience/blob/master/Apps/web_4/README.md|
+|web_5|SQL呼び出し(SQLインジェクション)|https://github.com/takuma-goto-mvrck/security-experience/blob/master/Apps/web_5/README.md|
+|web_6|取り消しの効かない重要な処理(CSRF)|https://github.com/takuma-goto-mvrck/security-experience/blob/master/Apps/web_6/README.md|
+|web_7|セッション管理の不備(セッションハイジャック、推測可能なセッションID、セッションIDの固定化)|https://github.com/takuma-goto-mvrck/security-experience/blob/master/Apps/web_7/README.md|
+|web_8|リダイレクト処理(オープンリダイレクタ、HTTPヘッダインジェクション)|https://github.com/takuma-goto-mvrck/security-experience/blob/master/Apps/web_8/README.md|
+|web_10|メール送信(メールヘッダ・インジェクション)|https://github.com/takuma-goto-mvrck/security-experience/blob/master/Apps/web_10/README.md|
+|web_11|ファイルアクセス(ディレクトリ・トラバーサル、意図しないファイル公開)|https://github.com/takuma-goto-mvrck/security-experience/blob/master/Apps/web_11/README.md|
+|web_12|OSコマンド(OSコマンド・インジェクション)|https://github.com/takuma-goto-mvrck/security-experience/blob/master/Apps/web_12/README.md|
+|web_15|eval(evalインジェクション)|https://github.com/takuma-goto-mvrck/security-experience/blob/master/Apps/web_15/README.md|
 
 
 # アプリの起動方法
@@ -60,7 +60,7 @@
 
 ## 起動・停止方法
     # 起動 ※複数のアプリを起動しないでください。起動前には必ず停止処理を行ってください。
-    $ git clone https://github.com/takuma-goto310/security-experience.git
+    $ git clone https://github.com/takuma-goto-mvrck/security-experience.git
     $ cd security-experience
     $ sh ./startup.sh {$SERVICE_NAME}
     # SERVICE_NAMEには「アプリ内容」に記載した「app_no」を指定してください(例：SQLインジェクションのアプリを立ち上げたい場合　$ sh ./startup.sh web_5)
