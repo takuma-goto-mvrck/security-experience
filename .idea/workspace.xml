@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9d70923-26b1-4c7b-91d9-b92db24f7c7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Apps/web_11/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_11/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_4/app/controllers/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_4/app/controllers/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_4/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_4/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_5/app/controllers/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_5/app/controllers/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_5/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_5/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_6/app/controllers/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_6/app/controllers/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_6/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_6/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_6/trap_example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_6/trap_example/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_7/app/controllers/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_7/app/controllers/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_7/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_7/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_8/app/controllers/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_8/app/controllers/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_8/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_8/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_8/app/views/enter.html" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_8/app/views/enter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_8/trap_example/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_8/trap_example/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_8/trap_example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_8/trap_example/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_8/trap_example/trap.html" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_8/trap_example/trap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_sample/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_sample/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/web_trap/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/web_trap/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docker/go/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/go/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docker/go/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/go/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="c9d70923-26b1-4c7b-91d9-b92db24f7c7c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,36 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Docker/go/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-570" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/web_8/trap_example/blog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="73" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Apps/web_8/trap_example/trap.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="413">
+              <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -117,6 +70,11 @@
             <path>
               <item name="security-experience" type="b2602c69:ProjectViewProjectNode" />
               <item name="security-experience" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="security-experience" type="b2602c69:ProjectViewProjectNode" />
+              <item name="security-experience" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="security-experience" type="b2602c69:ProjectViewProjectNode" />
@@ -214,13 +172,6 @@
     <entry file="file://$PROJECT_DIR$/app.conf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Docker/go/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Apps/web_8/app/views/enter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -228,9 +179,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/Apps/web_8/trap_example/trap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570" />
+        <state relative-caret-position="165">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Apps/web_8/trap_example/blog.html">
@@ -240,10 +193,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/web_8/trap_example/trap.html">
+    <entry file="file://$PROJECT_DIR$/Docker/go/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="150">
+          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="39" />
         </state>
       </provider>
     </entry>
